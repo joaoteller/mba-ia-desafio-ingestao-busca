@@ -5,6 +5,8 @@ Este repositório contém uma solução de ingestão e busca com chat baseada em
 Principais arquivos
 - `src/ingest.py` — script responsável por ingerir documentos (PDFs) e indexá-los no banco/vetor store.
 - `src/chat.py` — interface de chat que realiza buscas/consultas usando os dados ingeridos.
+- `src/search.py` — criação do chain para busca no banco de dados.
+
 
 Pré-requisitos
 - Docker e Docker Compose (para subir o banco de dados usado pela solução)
@@ -52,5 +54,3 @@ docker compose down
 ```
 
 - Consulte os arquivos em `src/` para mais detalhes sobre parâmetros e caminhos de entrada/saída.
-
-Se quiser, eu posso: adicionar instruções mais detalhadas sobre onde colocar os PDFs, criar um script de exemplo para popular com um PDF de amostra, ou adicionar um pequeno guia de solução de problemas.
