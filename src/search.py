@@ -74,7 +74,7 @@ def search_prompt():
         )
 
         # 4. retriever
-        retriever = vector_store.as_retriever(search_kwargs={"k": 3})
+        retriever = vector_store.as_retriever(search_kwargs={"k": 10})
 
         # 5. prompt
         prompt = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
